@@ -1,6 +1,8 @@
 <template>
   <div class="dashboard-container">
     <div class="dashboard-text">name: {{ name }}</div>
+    <div class="dashboard-text">Public Key: {{ public_key }}</div>
+
   </div>
 </template>
 
@@ -11,7 +13,8 @@ export default {
   name: 'Dashboard',
   computed: {
     ...mapGetters([
-      'name'
+      'name',
+      'public_key'
     ])
   }
 }
